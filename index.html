@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cookie Clicker</title>
+  </head>
+  <body>
+    <div class="game-wrapper">
+      <!-- STATS -->
+      <div class="game-stats">
+        <div class="game-stats-inner">
+          <h2>Cookie Stats</h2>
+          <p id="totalClicks">Total Clicks: <span id="clicksCount">0</span></p>
+          <p id="cps">CPS: <span id="cpsCount">0</span></p>
+          <hr />
+          <div class="helpers">
+            <h4>Helpers</h4>
+            <p id="autoClickers">
+              Auto-Clickers: <span id="autoClickerCount">0</span>
+            </p>
+            <p id="grandmas">Grandmas: <span id="grandmaCount">0</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAIN -->
+      <div class="game-container">
+        <button id="cookie" onclick="clickCookie()">
+          <img src="cookie.png" class="cookie-img" alt="" srcset="" />
+        </button>
+        <h1 id="cookies">Cookies: <span id="cookieCount">0</span></h1>
+      </div>
+
+      <!-- STORE -->
+      <div class="game-store">
+        <div class="game-store-inner">
+          <h2>Cookie Store</h2>
+          <div id="buy" onclick="buyAutoClicker()">
+            Auto-Clicker (Cost:
+            <span id="autoClickerCost" class="pricetag">10</span> Cookies)
+          </div>
+          <!-- Add a new button for buying Grandmas -->
+          <div id="buy" onclick="buyGrandma()">
+            Grandma (Cost:
+            <span id="grandmaCost" class="pricetag">50</span> Cookies)
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

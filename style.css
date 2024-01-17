@@ -1,0 +1,90 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  color: white;
+}
+
+.game-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-container,
+.game-stats,
+.game-store {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(25, 25, 32);
+}
+
+.game-container {
+  width: 50%;
+  background: rgba(15, 15, 20, 0.9);
+}
+
+.game-stats {
+  width: 25%;
+  text-align: left;
+}
+
+.game-store {
+  width: 25%;
+  text-align: right;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#cookie {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.cookie-img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+
+  -webkit-animation: rotating 10s linear infinite;
+  -moz-animation: rotating 10s linear infinite;
+  -ms-animation: rotating 10s linear infinite;
+  -o-animation: rotating 10s linear infinite;
+  animation: rotating 10s linear infinite;
+}
+
+#cookies {
+  margin-top: 20px;
+}
+
+#buy {
+  cursor: pointer;
+  border: 1px solid grey;
+  padding: 10px;
+}
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
